@@ -1,0 +1,45 @@
+{
+  "name": "HackerNews Article",
+  "baseSelector": "div.body-post.clear",
+  "baseFields": [
+    {
+      "name": "data-category",
+      "type": "attribute",
+      "attribute": "data-category"
+    }
+  ],
+  "fields": [
+    {
+      "name": "title",
+      "selector": "div.home-right h2.home-title",
+      "type": "text"
+    },
+    {
+      "name": "date",
+      "selector": "span.h-datetime",
+      "type": "text"
+    },
+    {
+      "name": "tags",
+      "selector": "span.h-tags",
+      "type": "text"
+    },
+    {
+      "name": "description",
+      "selector": "div.home-desc",
+      "type": "text"
+    },
+    {
+      "name": "image_url",
+      "selector": "img.home-img-src",
+      "type": "attribute",
+      "attribute": "src"
+    },
+    {
+      "name": "link",
+      "selector": "a.story-link",
+      "type": "attribute",
+      "attribute": "href"
+    }
+  ]
+}
